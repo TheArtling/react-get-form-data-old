@@ -9,7 +9,7 @@ function getMultipartData(refs, is_native) {
     })
     return formData
   } else {
-    return new FormData(instance)
+    return new FormData(refs)
   }
 }
 
