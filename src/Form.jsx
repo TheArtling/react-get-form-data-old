@@ -29,9 +29,11 @@ export default class Form extends React.Component {
     let { action, method, encType } = this.props
 
     const childrenWithProps = React.Children.map(
-      this.props.children, (child) => React.cloneElement(child,  {
+      this.props.children,
+      (child) => React.cloneElement(child,  {
         ref: (ref) => this.handleSetRef(child,ref),
-    }))
+      })
+    )
 
     return (
       <form

@@ -18,7 +18,7 @@ function getApplicationJson(refs) {
   refs.map(ref => {
     let value
     let [ key, node ] = ref
-    if(node['getFormValue']) {
+    if (node['getFormValue']) {
       value = node.getFormValue()
     } else {
       value = node.value
